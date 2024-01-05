@@ -11,14 +11,29 @@
     --desaturated-dark-blue: hsl(214, 17%, 51%);
     --grayish-blue: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
+    --white: hsl(0, 0%, 100%);
 }
 
 body {
     font-size: 1.3rem;
     font-family: 'Manrope', sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: var(--light-grayish-blue);
 }
 
 #app {
+    margin: 0 2.4rem;
+    background-color: var(--white);
+}
+
+#card-banner {
+    background-size: cover;
+}
+
+#card-banner img {
+    max-width: 100%;
 }
 
 .card-author {
