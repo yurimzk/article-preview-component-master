@@ -18,3 +18,29 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
+#app {
+}
+
+.card-author {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.authors-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.authors-info {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.btn-share {
+    border: none;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
