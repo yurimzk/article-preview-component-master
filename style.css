@@ -26,6 +26,7 @@ body {
 #app {
     margin: 0 2.4rem;
     background-color: var(--white);
+    border-radius: 1.6rem;
 }
 
 #card-banner {
@@ -34,11 +35,26 @@ body {
 
 #card-banner img {
     max-width: 100%;
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+}
+
+#card-info {
+    padding: 3.2rem;
+}
+
+.card-title {
+    margin-top: 3.2rem;
+}
+
+.card-description {
+    margin-top: 2.4rem;
 }
 
 .card-author {
     display: flex;
     gap: 2.4rem;
+    margin-top: 3.2rem;
 }
 
 .authors-avatar {
