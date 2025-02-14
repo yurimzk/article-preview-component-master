@@ -11,14 +11,24 @@
   --desaturated-dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(213, 23%, 69%);
   --light-grayish-blue: hsl(210, 46%, 95%);
+  --white: hsl(0, 0%, 100%);
 }
 
 body {
   font-size: 1.3rem;
+  font-family: "Manrope", serif;
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #app {
-  display: grid;
-  place-content: center;
-  height: 100vh;
+  background-color: var(--white);
+  width: 500px;
+}
+
+img {
+  max-width: 100%;
 }
