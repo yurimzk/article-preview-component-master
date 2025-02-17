@@ -57,7 +57,7 @@ img {
 
 #card-info {
   border-radius: 0 0 1rem 1rem;
-  padding: 4rem 3.9rem 2rem;
+  padding: 4rem 3.9rem 0;
 }
 
 #card-info > p {
@@ -65,14 +65,14 @@ img {
   line-height: 150%;
 }
 
-h2 {
-  font-size: 1.6rem;
-}
-
 h2,
 h3 {
   font-weight: 700;
   color: var(--very-dark-grayish-blue);
+}
+
+h2 {
+  font-size: 1.6rem;
 }
 
 h3 {
@@ -82,27 +82,10 @@ h3 {
 #card-info p {
   font-weight: 500;
   color: var(--desaturated-dark-blue);
+  margin-bottom: 2rem;
 }
 
-.card-author {
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.author-container {
-  display: flex;
-  gap: 1.6rem;
-}
-
-.author-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.author-info p {
+.author-info span {
   font-weight: 500;
   color: var(--light-grayish-blue);
 }
@@ -117,6 +100,68 @@ button {
 button:hover {
   cursor: pointer;
   background-color: var(--grayish-blue);
+}
+
+.card-author,
+.share-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-author {
+  position: relative;
+  z-index: 1;
+  padding: 1rem 0;
+}
+
+.author-container,
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.author-container {
+  align-items: center;
+}
+
+.share-links {
+  position: absolute;
+  top: 65.5%;
+  left: 5%;
+  width: 90%;
+  background-color: var(--very-dark-grayish-blue);
+  z-index: 2;
+  padding: 1.4rem 2rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.share-links .social-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-links span {
+  color: var(--grayish-blue);
+  letter-spacing: 0.5rem;
+}
+
+.share-links button {
+  background-color: var(--desaturated-dark-blue);
+  color: var(--white);
+}
+
+.share-links button:hover {
+  background-color: var(--grayish-blue);
+}
+
+.share-links button img {
+  filter: brightness(0) invert(1);
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 1440px) {
