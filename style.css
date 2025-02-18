@@ -176,7 +176,7 @@ h3 {
   }
 
   .share-links {
-    top: 56.5%;
+    top: 57.5%;
     left: 65%;
     border-radius: 1rem;
     width: 15%;
@@ -185,5 +185,24 @@ h3 {
   .share-links a {
     width: 15px;
     height: 15px;
+  }
+
+  .share-container {
+    position: relative;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+
+  .share-container::after {
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    left: 47%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: var(--very-dark-grayish-blue) transparent transparent
+      transparent;
   }
 }
