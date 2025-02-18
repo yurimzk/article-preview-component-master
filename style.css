@@ -183,4 +183,11 @@ button:hover {
   h2 {
     font-size: 1.8rem;
   }
+
+  .share-links {
+    top: 51.5%;
+    left: 63%;
+    border-radius: 1rem;
+    width: 13%;
+  }
 }
