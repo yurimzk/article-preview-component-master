@@ -147,18 +147,9 @@ button:hover {
   letter-spacing: 0.5rem;
 }
 
-.share-links button {
-  background-color: var(--desaturated-dark-blue);
-  color: var(--white);
-}
-
-.share-links button:hover {
-  background-color: var(--grayish-blue);
-}
-
-.share-links button img {
+/* .share-links button img {
   filter: brightness(0) invert(1);
-}
+} */
 
 .hidden {
   display: none;
@@ -186,8 +177,13 @@ button:hover {
 
   .share-links {
     top: 51.5%;
-    left: 63%;
+    left: 64%;
     border-radius: 1rem;
-    width: 13%;
+    width: 15%;
+  }
+
+  .share-links a {
+    width: 15px;
+    height: 15px;
   }
 }
